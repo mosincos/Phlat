@@ -1,3 +1,9 @@
+phlat (0.04-1) unstable; urgency=low
+
+  * fix popups
+
+-- SSF <https://github.com/sixsixfive> Mon, 24 Apr 2017 20:35:21 +0200
+
 phlat (0.03-1) unstable; urgency=low
 
   * Initial beta release

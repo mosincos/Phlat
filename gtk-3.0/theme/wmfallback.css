@@ -79,6 +79,9 @@ solid.csd headerbar,
 solid.csd headerbar:backdrop{
 padding:0px 0px 1px 1px;
 border-bottom:1px solid @border_color;}
+window.csd.popup decoration,
+window.csd.popup decoration:backdrop{
+border: none}
 
 .titlebar>box>.title,
 .header-bar>box>.title,

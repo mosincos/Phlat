@@ -14,51 +14,16 @@ menu>menuitem:hover,
 menu>menuitem:backdrop:hover{
 background:@selected_bg_color;
 border-style:none;}
-/*
+
 popover.background,
-popover.background:backdrop,
-*.osd,
-*.osd:backdrop{
+popover.background:backdrop{
 padding:0px;
-border-radius:2px;
-background:shade(@window,1.05);
-box-shadow:0 1px 3px @border;}
-popover.background,
-*.osd,
-*.osd:backdrop,
-overlay,
-overlay:backdrop{
-border:1px solid rgba(0,0,0,0.4);}
-
-popover.background modelbutton.flat,
-popover.background checkbutton{
-padding:2px;}
-
-popover.background modelbutton.flat:hover,
-popover.background modelbutton.flat:checked,
-popover.background checkbutton:hover,
-popover.background checkbutton:checked{
-border-radius:2px;
-background:shade(@hilight,1.05);}
-
-menu>menuitem check:hover,
-menu>menuitem radio:hover,
-popover.background check:hover,
-popover.background radio:hover{
-background:@window}
-
-menu>menuitem check:hover,
-menu>menuitem radio:hover,
-popover check:hover,
-popover radio:hover,
-menu>menuitem check:checked:hover,
-menu>menuitem radio:checked:hover,
-popover check:checked:hover,
-popover radio:checked:hover{
-border-color:alpha(@border,2.0);}
-
+background:@bg_color;
+border:1px solid @border_color;}
 popover scrolledwindow{
-border-top:1px solid @border;
-border-bottom:1px solid @border;
-background:@basebg;}
-*/
+border-top:1px solid @border_color;
+border-bottom:1px solid @border_color;
+background:@base_color;}
+popover.background modelbutton:hover{
+background:@selected_base_color;}
+

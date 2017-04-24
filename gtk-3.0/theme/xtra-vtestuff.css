@@ -1,0 +1,9 @@
+#xfce4-terminal-notebook,
+#xfce4-terminal-notebook:backdrop{
+border:none;
+margin:-1px;
+padding:0px;}
+
+#xfce4-terminal-notebook>stack,
+#xfce4-terminal-notebook>stack:backdrop{
+border-top:1px solid @border_color;}

@@ -1,6 +1,8 @@
 phlat (0.04-1) unstable; urgency=low
 
   * fix popups
+  * add xfterminal
+
 
 -- SSF <https://github.com/sixsixfive> Mon, 24 Apr 2017 20:35:21 +0200
 

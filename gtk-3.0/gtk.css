@@ -62,10 +62,6 @@
 @import url("theme/treeview.css");
 
 /*window stuff
- * 
- * @import url("theme/treeview.css");
-@import url("theme/arrows.css");
-
 @import url("theme/dialogs.css");
 @import url("theme/calendar.css");*/
 /*extra apps
@@ -74,7 +70,7 @@
 @import url("theme/xtra-gnome.css");
 @import url("theme/xtra-cinnamon.css");
 @import url("theme/xtra-lightdm.css");
-@import url("theme/xtra-unity.css");
-@import url("theme/xtra-vtestuff.css");*/
+@import url("theme/xtra-unity.css");*/
 @import url("theme/xtra-xfce.css");
+@import url("theme/xtra-vtestuff.css");
 @import url("theme/xtra-mozilla.css");

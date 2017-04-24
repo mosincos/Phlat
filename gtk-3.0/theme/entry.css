@@ -1,0 +1,23 @@
+entry,
+entry:backdrop{
+min-height:22px;
+padding:0px 2px;
+background:@base_color;
+border:1px solid @border_color;}
+
+entry selection{
+background:@selected_base_color;
+color:@selected_text_color;}
+entry:backdrop selection{
+background:shade(@base_color,1.3);
+color:@selected_text_color;}
+
+.horizontal.linked>entry:not(:first-child):not(:dir(rtl)),
+.horizontal.linked>entry:not(:first-child):not(:dir(rtl)):backdrop{
+margin-left:-1px;}
+.horizontal.linked>entry:not(:first-child):not(:dir(ltr)),
+.horizontal.linked>entry:not(:first-child):not(:dir(ltr)):backdrop{
+margin-left:-1px;}
+.vertical.linked>entry:not(:first-child),
+.vertical.linked>entry:not(:first-child):backdrop{
+margin-top:-1px;}

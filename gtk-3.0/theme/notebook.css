@@ -1,0 +1,37 @@
+notebook.frame,
+notebook.frame:backdrop{
+border-color:transparent;
+background:inherit;}
+notebook>header.top,
+notebook>header.bottom{
+margin:3px 2px;}
+notebook>header.left,
+notebook>header.right{
+margin:2px 3px;}
+
+notebook>header>tabs>tab:not(:checked),
+notebook>header>tabs>tab:not(:checked):backdrop{
+font-weight:bold;
+background-color:shade(@bg_color,0.76);
+border:1px solid @border_color;}
+notebook>header>tabs>tab:checked,
+notebook>header>tabs>tab:backdrop:checked{
+font-weight:bold;
+background-color:@selected_bg_color;
+border:1px solid rgba(0,0,0,0.8);}
+notebook>header.top>tabs>tab,
+notebook>header.bottom>tabs>tab{
+padding:1px 10px;}
+notebook>header.left>tabs>tab,
+notebook>header.right>tabs>tab{
+padding:10px 1px;}
+notebook>header.top>tabs>tab,
+notebook>header.bottom>tabs>tab{
+border-width:1px;}
+notebook>header.top>tabs>tab:not(:first-child),
+notebook>header.bottom>tabs>tab:not(:first-child){
+margin-left:-1px;}
+notebook>header.left>tabs>tab:not(:first-child),
+notebook>header.right>tabs>tab:not(:first-child){
+margin-top:-1px;}
+

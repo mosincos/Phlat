@@ -1,0 +1,48 @@
+progressbar,
+progressbar label{
+font-size:0%;}
+progressbar trough{
+border:1px solid @border_color;
+background:@base_color}
+progressbar progress{
+background:@selected_base_color;}
+progressbar.horizontal trough,
+progressbar.horizontal progress{
+min-height:20px;}
+progressbar.vertical trough,
+progressbar.vertical progress{
+min-width:20px;}
+
+levelbar:backdrop,
+levelbar{
+margin:2px;
+font-size:0%;}
+levelbar trough,
+levelbar trough:backdrop{
+padding:2px;
+background:none;}
+
+levelbar.horizontal block{
+min-height:20px;}
+levelbar.vertical block{
+min-width:20px;}
+
+levelbar.discrete block,
+levelbar.discrete block:backdrop,
+levelbar block.empty,
+levelbar block.empty:backdrop{
+min-height:20px;
+min-width:5px;
+margin:0 7px;
+border:1px solid @border_color;
+background:@base_color;}
+levelbar block:not(.empty),
+levelbar block:not(.empty):backdrop,
+levelbar block.low:backdrop,
+levelbar block.low,
+levelbar block.high:backdrop,
+levelbar block.high,
+levelbar block.full:backdrop,
+levelbar block.full{
+border:1px solid rgba(0,0,0,0.8);
+background:@selected_bg_color;}

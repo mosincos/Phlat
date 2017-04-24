@@ -1,0 +1,12 @@
+style"textview"{
+base[NORMAL]=@text_color
+base[PRELIGHT]=@text_color
+base[SELECTED]=@selected_base_color
+base[ACTIVE]=shade(0.7,@text_color)
+base[INSENSITIVE]=@text_color
+text[NORMAL]=@base_color
+text[PRELIGHT]=@base_color
+text[SELECTED]=@selected_text_color
+text[ACTIVE]=@base_color
+text[INSENSITIVE]=@inactive_text_color}
+widget_class"*GtkTextView*"style"textview"

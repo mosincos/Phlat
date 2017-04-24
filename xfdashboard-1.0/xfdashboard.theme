@@ -1,0 +1,9 @@
+[Xfdashboard Theme]
+Name=Phlat
+Comment=Exposé alike
+Style=xfdashboard.css
+Layout=xfdashboard.xml
+Effects=effects.xml
+Author=SSF
+Version=0.6.1
+Screenshot=screenshot.png

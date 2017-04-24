@@ -1,0 +1,41 @@
+treeview{
+-GtkTreeView-horizontal-separator: 4;
+-GtkTreeView-grid-line-width: 1;
+-GtkTreeView-grid-line-pattern: "\001\001";
+-GtkTreeView-tree-line-width: 1;
+-GtkTreeView-tree-line-pattern: "\001\001";
+-GtkTreeView-expander-size:22;}
+
+treeview>header>button,
+treeview>header>button:backdrop{
+margin-top:-1px;
+margin-left:-1px;
+margin-right:-1px;
+font-weight:bold;
+padding:1px 4px 1px 4px;
+background:shade (@base_color,0.8);}
+treeview>header>button:active{
+color:@selected_text_color;
+background:@selected_base_color;}
+treeview.view:hover{
+border-color:alpha(@selected_base_color,0.3);;
+background:alpha(@selected_base_color,0.3);}
+treeview.view.separator,
+treeview.view.separator:backdrop{
+min-height:1px;
+color:alpha(@fg_color,0.4);}
+
+treeview.view.expander:checked{
+min-height:22px;
+min-width:17px;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_active.svg"),url("../../images/gtk-3.0/arrow-down_active2.svg"));}
+treeview.view.expander{
+min-height:22px;
+min-width:17px;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.75turn);}
+treeview.view.expander:dir(rtl) {
+min-height:22px;
+min-width:17px;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.25turn);}

@@ -1,0 +1,15 @@
+infobar,
+infobar>*{
+margin:2px;}
+infobar{
+border:1px solid rgba(0,0,0,0.4);
+color:@text_color;
+background:@selected_bg_color;}
+.info{
+background:@info_color;}
+.question{
+background:@question_color;}
+.warning{
+background:@warning_color;}
+.error{
+background:@error_color;;}

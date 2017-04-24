@@ -1,0 +1,43 @@
+###colors
+#window colors
+gtk_color_scheme="bg_color:#424141\nfg_color:#f1f2f2\ninactive_fg_color:#656666"
+#base colors
+gtk_color_scheme="base_color:#323131\ntext_color:#f1f2f2\ninactive_text_color:#656666"
+#hilight colors
+gtk_color_scheme="selected_bg_color:#5288d1\nselected_base_color:#5288d1\nselected_fg_color:#ffffff\nselected_text_color:#ffffff"
+#url colors
+gtk_color_scheme="url_color:#2980b9\nvisited_url_color:#bdc3c7"
+#error
+gtk_color_scheme="error_color:#cc0000"
+###main stuff
+include "theme/allr.c"
+include "theme/menubarr.c"
+include "theme/toolbarr.c"
+include "theme/statusbarr.c"
+include "theme/notebookr.c"
+include "theme/progressbarr.c"
+include "theme/menuitemr.c"
+include "theme/treeviewr.c"
+include "theme/buttonr.c"
+include "theme/spinbuttonr.c"
+include "theme/framer.c"
+include "theme/scaler.c"
+include "theme/scrollbarr.c"
+#include "theme/textviewr.c"
+include "theme/iconviewr.c"
+include "theme/infobarr.c"
+include "theme/tooltipr.c"
+include "theme/pathbarr.c"
+###apps stuff
+include "theme/gimpr.c"
+include "theme/chromiumr.c"
+include "theme/geanyr.c"
+include "theme/xfcer.c"
+#####settings
+include "theme/iconandfontfixesr.c"
+include "settings.ini"
+#####Docs
+### https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkThemes
+### https://wiki.gnome.org/Attic/GnomeArt/Tutorials/GtkEngines/PixmapEngine
+### https://developer.gnome.org/gtk2/stable/index.html
+### http://www.orford.org/gtk/

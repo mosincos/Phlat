@@ -1,0 +1,20 @@
+#MozillaGtkWidget{
+background:@bg_color;
+color:@fg_color;}
+
+#MozillaGtkWidget border{
+border:1px solid @border_color;
+border-radius:2px;}
+
+#MozillaGtkWidget scrollbar,
+#MozillaGtkWidget scrollbar trough,
+#MozillaGtkWidget scrollbar trough:backdrop{
+background:@base_color;
+border-color:transparent;}
+
+#MozillaGtkWidget scrollbar slider,
+#MozillaGtkWidget scrollbar slider:backdrop{
+margin:2px;}
+
+#MozillaGtkWidget .separator{
+color:@border_color;}

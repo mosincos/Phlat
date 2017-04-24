@@ -1,0 +1,32 @@
+check,
+radio{
+margin:2px;
+min-height:16px;
+min-width:16px;
+background-color:shade(@bg_color,0.76);
+border:1px solid @border_color;
+-gtk-icon-source:none;}
+radio{
+border-radius:9px;}
+check:checked:not(:disabled){
+background-color:@selected_bg_color;
+border:1px solid rgba(0,0,0,0.8);}
+check:indeterminate{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/check-semi.svg"),url("../../images/gtk-3.0/check-semi2.svg"));}
+check:checked{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/check-check.svg"),url("../../images/gtk-3.0/check-check2.svg"));}
+check:checked:disabled{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/check-check_insensitive.svg"),url("../../images/gtk-3.0/check-check_insensitive2.svg"));}
+check:indeterminate:disabled{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/check-semi_insensitive.svg"),url("../../images/gtk-3.0/check-semi_insensitive2.svg"));}
+radio:checked:not(:disabled){
+background-color:@selected_bg_color;
+border:1px solid rgba(0,0,0,0.8);}
+radio:indeterminate{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-semi.svg"),url("../../images/gtk-3.0/radio-semi2.svg"));}
+radio:checked{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-check.svg"),url("../../images/gtk-3.0/radio-check2.svg"));}
+radio:checked:disabled{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-check_insensitive.svg"),url("../../images/gtk-3.0/radio-check_insensitive2.svg"));}
+radio:indeterminate:disabled{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/radio-semi_insensitive.svg"),url("../../images/gtk-3.0/radio-semi_insensitive2.svg"));}

@@ -1,0 +1,99 @@
+arrow{
+min-height:16px;
+min-width:16px;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));}
+arrow.up,
+arrow.top{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.5turn);}
+arrow.left,
+menu menuitem arrow:dir(rtl),
+.menu menuitem arrow:dir(rtl),
+modelbutton.flat arrow.left,
+popover.background checkbutton arrow.left,
+popover.background radiobutton arrow.left{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.25turn);}
+arrow.right,
+menu menuitem arrow,
+.menu menuitem arrow,
+modelbutton.flat arrow.right,
+popover.background checkbutton arrow.right,
+popover.background radiobutton arrow.right{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.75turn);}
+
+button arrow.bottom,
+combobox button arrow,
+image#gtk-toolbar-arrow,
+menu > arrow.bottom,
+.menu > arrow.bottom{
+-gtk-icon-source:none;
+background-image:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+background-repeat:no-repeat;
+background-position:50% 50%;}
+button arrow.top,
+menu > arrow.top,
+.menu > arrow.top {
+-gtk-icon-source:none;
+background-image:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+background-repeat:no-repeat;
+background-position:50% 50%;}
+
+notebook > header.top > tabs > arrow.up,
+notebook > header.bottom > tabs > arrow.up,
+notebook > header.left > tabs > arrow.right,
+notebook > header.right > tabs > arrow.right{
+background:none;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.75turn);
+padding:4px 0px;}
+
+notebook > header.top > tabs > arrow.down,
+notebook > header.bottom > tabs > arrow.down,
+notebook > header.left > tabs > arrow.left,
+notebook > header.right > tabs > arrow.left{
+background:none;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.25turn);
+padding:4px 0px;}
+
+notebook > header.top > tabs > arrow.right,
+notebook > header.bottom > tabs > arrow.right,
+notebook > header.left > tabs > arrow.up,
+notebook > header.right > tabs > arrow.up{
+background:none;
+-gtk-icon-transform:rotate(0turn);
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+padding:0px 4px;}
+
+notebook > header.top > tabs > arrow.left,
+notebook > header.bottom > tabs > arrow.left,
+notebook > header.left > tabs > arrow.down,
+notebook > header.right > tabs > arrow.down{
+background:none;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.50turn);
+padding:0px 4px;}
+
+expander arrow{
+min-height:16px;
+min-width:16px;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));
+-gtk-icon-transform:rotate(0.75turn);}
+expander arrow:dir(rtl){
+min-height:16px;
+min-width:16px;
+-gtk-icon-transform:rotate(0.25turn);
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));}
+expander arrow:checked{
+min-height:16px;
+min-width:16px;
+-gtk-icon-transform:none;
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_active.svg"),url("../../images/gtk-3.0/arrow-down_active2.svg"));}
+
+arrow:disabled,
+arrow:disabled:backdrop{
+-gtk-icon-effect:dim;
+opacity:0.3;}
+

@@ -1,0 +1,18 @@
+menubar,
+menubar:backdrop{
+padding:0px 1px;}
+
+menubar>menuitem,
+menubar>menuitem:backdrop{
+font-weight:bold;
+padding:2px 5px;}
+
+menubar>menuitem:hover,
+menubar:backdrop>menuitem:hover{
+color:@selected_bg_color;
+background-color:shade(@bg_color,0.5);}
+
+menubar>menuitem>label,
+menubar>menuitem>label:backdrop{
+font-weight:bold;
+margin:0px;}

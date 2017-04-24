@@ -1,0 +1,21 @@
+style"progressbar"{
+xthickness=1
+ythickness=1
+font_name="Sans 0"
+GtkProgressBar::xspacing=1
+GtkProgressBar::yspacing=1
+bg[NORMAL]=@base_color
+bg[PRELIGHT]=@selected_bg_color
+engine"pixmap"{
+image{
+function=BOX
+detail="trough"
+file="../images/gtk-2.0/shadow.svg"
+border={1,1,1,1}
+stretch=TRUE}
+image{
+function=BOX
+detail="bar"
+file="../images/gtk-2.0/selection-color.svg"
+stretch=FALSE}}}
+class"GtkProgressBar"style"progressbar"

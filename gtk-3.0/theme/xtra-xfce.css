@@ -1,0 +1,34 @@
+dialog>box.vertical>widget>widget:first-child,
+dialog>box.vertical>widget>widget:first-child:backdrop {
+background:shade(@bg_color,0.9);}
+
+#ParoleScale trough,
+#ParoleScale trough:backdrop{
+min-height:24px;
+border:1px solid @border_color;
+background:@base_color;}
+#ParoleScale highlight{
+background:@error_color;}
+#ParoleScale slider,
+#ParoleScale slider:backdrop{
+min-height:24px;
+min-width:4px;
+background:@selected_text_color;
+box-shadow:none;}
+
+#XfcePanelWindowWrapper{
+border-color:transparent;
+color:@fg_color;
+background:@bg_color;}
+
+#XfceNotifyWindow,
+#XfceNotifyWindow:backdrop{
+border:1px solid shade(@bg_color,0.4);
+background:shade(@bg_color,0.6);
+border-radius:0px;}
+#XfceNotifyWindow label,
+#XfceNotifyWindow image {
+color:@fg_color;}
+#XfceNotifyWindow label#summary {
+color:@fg_color;
+font-weight:Bold;}

@@ -1,0 +1,10 @@
+style"toolbar"{
+xthickness=0
+ythickness=0
+GtkToolbar::shadow-type=GTK_SHADOW_NONE
+GtkToolbar::internal-padding=1
+GtkToolbar::space-style=GTK_TOOLBAR_SPACE_LINE
+GtkToolbar::button-relief=GTK_RELIEF_NONE
+GtkToolbar::space-style=GTK_TOOLBAR_SPACE_EMPTY
+GtkToolbar::space-size=0}
+class"GtkToolbar"style"toolbar"

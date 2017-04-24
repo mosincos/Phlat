@@ -1,0 +1,93 @@
+.default-decoration .titlebutton image,
+button.minimize.titlebutton image,
+button.maximize.titlebutton image,
+button.close.titlebutton image{
+opacity:0}
+.default-decoration .titlebutton,
+.default-decoration .titlebutton:backdrop,
+button.close.titlebutton,
+button.close.titlebutton:backdrop,
+button.minimize.titlebutton,
+button.minimize.titlebutton:backdrop,
+button.maximize.titlebutton,
+button.maximize.titlebutton:backdrop{
+border-color:transparent;
+background-color:transparent;
+min-width:22px;
+min-height:22px;
+color: transparent;
+background-position:center;
+background-repeat: no-repeat;
+background-size: 22px 22px;}
+button.close.titlebutton:active{
+background:@error_color;}
+button.minimize.titlebutton:active,
+button.maximize.titlebutton:active{
+background:@selected_bg_color;}
+.default-decoration button.minimize.titlebutton,
+headerbar .right button.minimize.titlebutton,
+headerbar .right:dir(rtl) button.minimize.titlebutton,
+headerbar .left button.minimize.titlebutton,
+headerbar .left:dir(rtl) button.minimize.titlebutton {
+background-image:-gtk-scaled(url("../../images/gtk-3.0/min.svg"),url("../../images/gtk-3.0/min2.svg"));}
+.default-decoration button.maximize.titlebutton,
+headerbar .right button.maximize.titlebutton,
+headerbar .right:dir(rtl) button.maximize.titlebutton,
+headerbar .left button.maximize.titlebutton,
+headerbar .left:dir(rtl) button.maximize.titlebutton {
+background-image:-gtk-scaled(url("../../images/gtk-3.0/max.svg"),url("../../images/gtk-3.0/max2.svg"));}
+.default-decoration button.close.titlebutton,
+headerbar .right button.close.titlebutton,
+headerbar .right:dir(rtl) button.close.titlebutton,
+headerbar .left button.close.titlebutton,
+headerbar .left:dir(rtl) button.close.titlebutton {
+background-image:-gtk-scaled(url("../../images/gtk-3.0/close.svg"),url("../../images/gtk-3.0/close2.svg"));}
+.default-decoration .titlebutton:backdrop,
+button.close.titlebutton:backdrop,
+button.minimize.titlebutton:backdrop,
+button.maximize.titlebutton:backdrop{
+opacity:0.5;}
+.default-decoration,
+headerbar .title{
+font-weight:bold;
+color:@fg_color;}
+.default-decoration:backdrop,
+headerbar .title:backdrop {
+color:@insensitive_fg_color;}
+decoration,
+decoration:backdrop{
+padding:0px;
+border:0px;
+background:@window;
+margin:0px;}
+.csd decoration,
+.csd decoration:backdrop {
+border-radius:0px 0px 0px 0px;
+padding:0px;
+margin:0px;
+box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.6);
+border:1px solid @border_color;}
+.solid-csd decoration,
+.solid-csd decoration:backdrop{
+box-shadow: none;
+padding:0px;
+margin:0px;
+border:1px solid @border_color;}
+window.csd headerbar,
+window.csd headerbar:backdrop,
+solid.csd headerbar,
+solid.csd headerbar:backdrop{
+padding:0px 0px 1px 1px;
+border-bottom:1px solid @border_color;}
+
+.titlebar>box>.title,
+.header-bar>box>.title,
+headerbar >stack>.title,
+headerbar>stack>box>.title{
+color:transparent;}
+headerbar >stack>.subtitle,
+headerbar>stack>box>.subtitle,
+.titlebar .subtitle,
+.header-bar .subtitle{
+font-weight:bold;
+text-shadow:none;}

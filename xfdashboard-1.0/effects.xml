@@ -1,0 +1,23 @@
+<effects>
+	<object id="black-white" class="ClutterDesaturateEffect">
+		<property name="factor">0.5</property>
+	</object>
+		<object id="normal" class="ClutterDesaturateEffect">
+		<property name="factor">0.0</property>
+	</object>
+	<object id="colorize" class="ClutterColorizeEffect">
+		<property name="tint">#ce99cd</property>
+	</object>
+	<object id="window-urgency" class="XfdashboardEmblemEffect">
+		<property name="icon-name">dialog-information</property>
+		<property name="icon-size">22</property>
+	</object>
+
+	<object id="running-application" class="XfdashboardEmblemEffect">
+		<property name="icon-name">running.svg</property>
+		<property name="icon-size">22</property>
+		<property name="anchor-point">south-east</property>
+		<property name="x-align">0.20</property>
+		<property name="y-align">0.68</property>
+	</object>
+</effects>

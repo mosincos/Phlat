@@ -1,0 +1,10 @@
+spinbutton.horizontal button.up:dir(ltr),
+spinbutton.horizontal button.down:dir(ltr){
+margin-left:-1px;}
+spinbutton.horizontal button.up:dir(rtl),
+spinbutton.horizontal button.down:dir(rtl){
+margin-right:-1px;}
+spinbutton.vertical button.up{
+margin-bottom:-1px;}
+spinbutton.vertical button.down{
+margin-top:-1px;}

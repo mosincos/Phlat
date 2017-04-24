@@ -1,0 +1,15 @@
+style"frame"{
+xthickness=0
+ythickness=0
+engine"pixmap"{
+image{
+function=SHADOW_GAP
+file="../images/gtk-2.0/arrow-bg.svg"
+border={4,4,4,4}
+stretch=TRUE
+gap_start_file="../images/gtk-2.0/none.svg"
+gap_start_border={0,0,0,0}
+gap_end_file="../images/gtk-2.0/none.svg"
+gap_end_border={0,0,0,0}
+gap_file="../images/gtk-2.0/none.svg"
+}}}class"GtkFrame"style"frame"

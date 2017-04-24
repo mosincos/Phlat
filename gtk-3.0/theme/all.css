@@ -1,0 +1,274 @@
+* {
+/*https://developer.gnome.org/gtk3/3.22/chap-css-properties.html */ 
+-GtkWidget-window-dragging:true;
+-GtkScrolledWindow-scrollbar-spacing:0;
+-GtkNotebook-has-backward-stepper:0;
+-GtkNotebook-has-forward-stepper:1;
+-GtkNotebook-has-secondary-backward-stepper:1;
+-GtkNotebook-has-secondary-forward-stepper:0;
+-GtkScrollbar-has-backward-stepper:1;
+-GtkScrollbar-has-forward-stepper:1;
+-GtkScrollbar-has-secondary-backward-stepper:0;
+-GtkScrollbar-has-secondary-forward-stepper:0;
+-GtkTextView-error-underline-color:@error_color;
+-GtkArrow-arrow-scaling:1;
+-GtkTreeView-horizontal-separator: 1;
+-GtkTreeView-grid-line-width: 1;
+-GtkTreeView-grid-line-pattern: '\01\01';
+-GtkTreeView-tree-line-width: 1;
+-GtkTreeView-tree-line-pattern: '\01\01';
+-GtkTreeView-expander-size: 16;
+-gtk-icon-shadow:none;
+-gtk-icon-style:regular;
+-gtk-icon-effect:none;
+transition:none;
+border:none;
+padding:0px;
+margin:0px;
+text-shadow:none;
+outline:0px;
+outline-offset:-1px;}
+
+label,
+label:backdrop{
+margin:1px 5px;}
+
+image,
+image:backdrop{
+margin:1px;}
+
+separator,
+separator:backdrop{
+min-height:1px;
+min-width:1px;
+background:image(@border_color);}
+paned.horizontal>separator,
+paned.horizontal>separator:backdrop {
+margin:0px 3px;}
+paned.vertical>separator,
+paned.vertical>separator:backdrop {
+margin:3px 0px;}
+
+toolbar separator,
+toolbar separator:backdrop,
+headerbar separator,
+headerbar separator:backdrop{
+opacity:0;}
+scrolledwindow:backdrop,
+vte-terminal,
+vte-terminal:backdrop
+image,
+image:backdrop,
+#xfce4-terminal-notebook,
+overlay,
+overlay:backdrop{
+-GtkWidget-window-dragging:false;}
+
+image:disabled,
+image:disabled:backdrop{
+opacity:0.3;
+-gtk-icon-effect:dim;}
+
+.background,
+.background:backdrop,
+.titlebar,
+.titlebar:backdrop,
+.gtkstyle-fallback,
+.gtkstyle-fallback:backdrop{
+border:1px solid transparent;
+color:@fg_color;
+background:@bg_color;}
+
+.background:disabled,
+.background:disabled:backdrop,
+.titlebar:disabled,
+.titlebar:disabled:backdrop,
+.gtkstyle-fallback:disabled,
+.gtkstyle-fallback:disabled:backdrop,
+*:disabled,
+*:disabled:backdrop{
+color:@inactive_fg_color;}
+*:selected,
+*:selected:backdrop,
+label selection,
+text selection{
+color:@selected_fg_color;
+background:@selected_bg_color;}
+.background:selected:backdrop,
+.titlebar:selected:backdrop,
+.gtkstyle-fallback:selected:backdrop,
+label selection:backdrop,
+text selection:backdrop{
+color:@selected_fg_color;
+background:shade(@bg_color,1.3);}
+
+.view,
+.view:backdrop{
+border-color:@base_color;
+color:@text_color;
+background:@base_color;}
+.view:disabled,
+.view:disabled:backdrop{
+border-color:@base_color;
+color:@inactive_text_color;}
+.view:selected,
+.view:selected:backdrop{
+border-color:@selected_base_color;
+color:@selected_text_color;
+background:@selected_base_color;}
+.view:selected:backdrop{
+border-color:shade(@base_color,1.3);;
+background:shade(@base_color,1.3);}
+
+.frame,
+.frame:backdrop{
+border:1px solid @border_color;}
+.frame>.frame,
+.frame>.frame:backdrop{
+border-width:0px;}
+viewport.frame,
+viewport.frame:backdrop,
+scrolledwindow.frame,
+scrolledwindow.frame:backdrop {
+color:@text_color;
+background:@base_color;}
+
+.link label,
+link{
+text-decoration:underline;
+color:@url_color;}
+.link:visited label,
+link:visited{
+color:@visited_url_color;}
+
+.dim-label,
+.dim-label:backdrop,
+.greyed-label,
+.greyed-label:backdrop {
+opacity:0.6;}
+* 
+.needs-attention,
+.counter-label {
+border-radius:2px;
+color:@selected_fg_color;
+background:@selected_bg_color;}
+
+statusbar,
+statusbar:backdrop{
+margin:-8px -10px;}
+
+.overshoot.top,
+.overshoot.top:backdrop,
+.overshoot.bottom,
+.overshoot.bottom:backdrop,
+.overshoot.left,
+.overshoot.left:backdrop,
+.overshoot.right,
+.overshoot.right:backdrop,
+.undershoot.top,
+.undershoot.top:backdrop,
+.undershoot.bottom,
+.undershoot.bottom:backdrop,
+.undershoot.left,
+.undershoot.left:backdrop,
+.undershoot.right,
+.undershoot.right:backdrop{
+background:transparent;
+border:none;
+box-shadow:none;}
+
+.rubberband,
+rubberband{
+border:1px solid @selected_base_color;
+background:alpha(@selected_base_color,0.2);}
+
+
+/*
+
+:not(decoration):not(window):drop(active):focus,
+:not(decoration):not(window):drop(active) {
+background:shade(@hilight2,1.3);}
+
+headerbar separator{
+opacity:0;}
+
+decoration,
+decoration:backdrop{
+padding:0px;
+border:0px;
+background:@window;
+margin:0px;}
+
+.popup decoration,
+.popup decoration:backdrop{
+padding:0px;
+border:0px;
+box-shadow:none;
+margin:10px;}
+
+.solid-csd decoration,
+.solid-csd decoration:backdrop{
+box-shadow: none;
+padding:0px;
+margin:0px;
+border:1px solid shade(@window,0.50);}
+
+.csd decoration,
+.csd decoration:backdrop {
+border-radius:2px 2px 0px 0px;
+padding:0px;
+margin:0px;
+box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.6);}
+
+.csd headerbar,
+.csd headerbar:backdrop {
+border-radius:2px 2px 0px 0px;}
+
+window>textview text {
+border-top:1px solid @border;}
+
+image,
+image:backdrop{
+-GtkWidget-window-dragging:false;}
+
+box.osd,
+box.osd:backdrop {
+background:transparent;}
+
+window>box>toolbar,
+window>box>statusbar{
+background:inherit;
+margin:0px -1px;}
+
+overlay *,
+overlay:backdrop * {
+-GtkWidget-window-dragging:false;}
+*/
+cellview,
+cellview:backdrop{
+margin:0px 5px;}
+calendar,
+calendar:backdrop {
+color: @text_color;
+border: 1px solid @border_color;}
+#pathbarbox,
+#pathbarbox:backdrop{
+background:@bg_color;}
+placessidebar,
+placessidebar:backdrop,
+placessidebar.frame,
+placessidebar.frame:backdrop,
+placessidebar list,
+placessidebar list:backdrop{
+border-color:transparent;
+background:@bg_color;}
+.sidebar{
+background:@bg_color;
+color:@fg_color;}
+assistant .sidebar>label{
+font-weight:bold;
+padding:3px;
+margin:3px 10px;}
+assistant .sidebar>label.highlight{
+border-radius:2px;
+border-bottom:1px solid @selected_bg_color;}

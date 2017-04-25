@@ -16,7 +16,10 @@ margin:-1px;
 min-width:16px;
 min-height:16px;}
 
-scrollbar button{
+scrollbar button,
+scrollbar button:checked,
+scrollbar button:backdrop{
+background:inherit;
 -gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));}
 scrollbar.vertical button.up{
 -gtk-icon-transform:rotate(0.5turn);}
@@ -24,6 +27,8 @@ scrollbar.horizontal button.down{
 -gtk-icon-transform:rotate(0.75turn);}
 scrollbar.horizontal button.up{
 -gtk-icon-transform:rotate(0.25turn);}
+scrollbar button:disabled{
+-gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_insensitive.svg"),url("../../images/gtk-3.0/arrow-down_insensitive2.svg"));}
 
 scrollbar slider,
 scrollbar slider:backdrop{

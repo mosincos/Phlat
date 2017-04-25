@@ -5,7 +5,7 @@
 	overlay-outline: #c9c3a3ff;
 	overlay-text: #333333ff;
 	color-border: #666666ff;
-	hilight-color: #ce99cdff;
+	hilight-color: #5288d1;
 	missing-icon: @try_icons("unknown", "image-missing", "gtk-missing-image");
 	close-icon: @try_icons("application-exit", "window-exit", @missing-icon);
 	search-icon: @try_icons("edit-find", "search", @missing-icon);

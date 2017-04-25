@@ -1,8 +1,14 @@
+phlat (0.05-1) unstable; urgency=low
+
+  * add a simple color script
+  * fixed the treeview hover
+
+-- SSF <https://github.com/sixsixfive> Tue, 25 Apr 2017 18:14:37 +0200
+
 phlat (0.04-1) unstable; urgency=low
 
   * fix popups
   * add xfterminal
-
 
 -- SSF <https://github.com/sixsixfive> Mon, 24 Apr 2017 20:35:21 +0200
 

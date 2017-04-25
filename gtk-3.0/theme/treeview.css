@@ -17,7 +17,7 @@ background:shade (@base_color,0.8);}
 treeview>header>button:active{
 color:@selected_text_color;
 background:@selected_base_color;}
-treeview.view:hover{
+treeview.view:hover:not(:selected){
 border-color:alpha(@selected_base_color,0.0);
 background:alpha(@selected_base_color,0.3);}
 treeview.view.separator,

@@ -36,11 +36,6 @@ if [ -z ${newcolor+x} ]; then
 	printf "no color was was selected, aborting!"
 	exit 1
 fi
-case "${newcolor//#/}|tr '[:upper:]' '[:lower:]" in
-	424141|f1f2f2|656666|323131|5288d1|2980b9|bdc3c7|cc0000|3366cc|ff6600|669900)
-		printf "this color is not available, aborting!"
-		exit 1;;
-esac
 ###recolor the xfwm/ui themes
 _folders="images gtk-3.0 gtk-2.0 xfwm4 xfdashboard-1.0"
 for _folder in $_folders; do

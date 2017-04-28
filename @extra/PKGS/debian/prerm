@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+for _file in $(/usr/share/themes/phlat/.files) ; do 
+  rm -rf "$_file"
+done

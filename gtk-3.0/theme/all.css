@@ -177,13 +177,16 @@ border:none;
 box-shadow:none;}
 
 .rubberband,
-rubberband{
+rubberband,
+.rubberband:backdrop,
+rubberband:backdrop{
 border:1px solid @selected_base_color;
 background:alpha(@selected_base_color,0.2);}
 
-
-toolbar{
+toolbar,
+toolbar:backdrop{
 margin:0px 1px;}
+
 /*
 
 :not(decoration):not(window):drop(active):focus,
@@ -235,15 +238,6 @@ image:backdrop{
 box.osd,
 box.osd:backdrop {
 background:transparent;}
-
-window>box>toolbar,
-window>box>statusbar{
-background:inherit;
-margin:0px -1px;}
-
-overlay *,
-overlay:backdrop * {
--GtkWidget-window-dragging:false;}
 */
 cellview,
 cellview:backdrop{

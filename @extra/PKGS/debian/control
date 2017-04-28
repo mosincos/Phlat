@@ -1,0 +1,17 @@
+Source: phlat
+Section: xfce
+Priority: optional
+Maintainer: SSF <https://github.com/sixsixfive>
+Build-Depends: libfile-fcntllock-perl, debhelper (>= 7) 
+Standards-Version: 3.9.6
+
+Package: phlat
+Architecture: all
+Conflicts: libgtk-3-0 (<<3.20)
+Replaces: phlat
+PreDepends: curl, unzip, findutils
+Depends: dmz-cursor-theme, yad, fonts-roboto, hicolor-icon-theme, coreutils, sed, tr
+Recommends: libgtk-3-0 (>=3.20), gtk2-engines, gtk2-engines:i386, gtk2-engines-murrine, gtk2-engines-murrine:i386, gtk2-engines-pixbuf, gtk2-engines-pixbuf:i386, gtk3-nocsd, libgtk3-nocsd0:i386
+Suggests: xfwm4 | marco | muffin | metacity, plank, xfce4-notifyd, xfdashboard, xfce4-windowck-plugin
+Provides: gnome-icon-theme, lxde-icon-theme, tango-icon-theme, gnome-themes-standard, gnome-themes-standard-data, mate-themes, mate-icon-theme, xfwm4-themes, gtk3-engines-xfce, gtk2-engines-xfce, murrine-themes
+Description: simple, dark and  fast theme

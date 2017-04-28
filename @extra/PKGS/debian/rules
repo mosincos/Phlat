@@ -1,0 +1,46 @@
+#!/usr/bin/make -f
+
+build: build-arch build-indep
+build-arch: build-stamp
+build-indep: build-stamp
+
+build-stamp:
+	dh_testdir
+	touch build-stamp
+
+clean:
+	dh_testdir
+	dh_testroot
+	rm -f build-stamp
+	rm -rf debian/phlat
+	dh_clean
+
+install: build
+	if [ -f $(CURDIR)/debian/phlat*.deb ]; then \
+		rm -f $(CURDIR)/debian/phlat*.deb ;\
+	fi;
+	dh_testdir
+	dh_testroot
+	dh_prep  
+	dh_installdirs
+	mkdir -p $(CURDIR)/debian/phlat/usr/share/themes/phlat
+binary-indep: build install
+	dh_testdir
+	dh_testroot
+	dh_installdocs
+	dh_installchangelogs 
+	dh_fixperms
+	dh_compress
+	dh_installdeb
+	dh_gencontrol
+	dh_md5sums
+#since we build it locally and don't want to share it make this a bit bigger but faster
+#	dh_builddeb -- -Znone -Snone -z0
+	dh_builddeb -- -Zxz -Sextreme -z9 --uniform-compression
+	dh_clean
+	if [ -f $(CURDIR)/../phlat*.deb ]; then \
+		mv $(CURDIR)/../phlat*.deb $(CURDIR)/debian ;\
+	fi;
+
+binary: binary-indep binary-arch
+.PHONY: build clean binary-indep binary-arch binary install

@@ -1,0 +1,31 @@
+#!/bin/sh
+set -e
+_tmpdir="/tmp/phlat.tmp"
+if [ -d ${_tmpdir} ]; then
+	rm -r ${_tmpdir}
+fi
+#dirs!
+mkdir -p ${_tmpdir}/etc/X11/Xsession.d
+mkdir -p ${_tmpdir}/usr/share/themes
+mkdir -p ${_tmpdir}/usr/share/plank/themes
+#downloading and extracting
+cd /tmp
+curl -L https://codeload.github.com/sixsixfive/Phlat/zip/master > /tmp/phlat.zip
+if [ -f /tmp/phlat.zip ]; then
+	unzip /tmp/phlat.zip -d ${_tmpdir}/usr/share/themes
+	mv ${_tmpdir}/usr/share/themes/Phlat-master ${_tmpdir}/usr/share/themes/phlat
+fi
+if [ -d ${_tmpdir}/usr/share/themes/phlat ]; then
+	chmod +x ${_tmpdir}/usr/share/themes/phlat/.changecolor.sh
+#plank theme
+	ln -sf ../../themes/phlat/@extra/plank/phlat ${_tmpdir}/usr/share/plank/themes/phlat
+#no overlay scrollbars
+	printf "export GTK_OVERLAY_SCROLLING=0\n" > ${_tmpdir}/etc/X11/Xsession.d/98_phlat
+	chmod +x ${_tmpdir}/etc/X11/Xsession.d/98_phlat
+fi
+#create a file list!
+find ${_tmpdir} > ${_tmpdir}/usr/share/themes/phlat/.files
+printf "${_tmpdir}/usr/share/themes/phlat/.files\n" >> ${_tmpdir}/usr/share/themes/phlat/.files
+sed -i 's|^/tmp/phlat.tmp||g' ${_tmpdir}/usr/share/themes/phlat/.files
+#install to /
+mv ${_tmpdir}/* /

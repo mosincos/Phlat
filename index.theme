@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Phlat
+Comment=Simple, dark & fast
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Phlat
+MetacityTheme=Phlat
+IconTheme=Phlat
+CursorTheme=Phlat
+CursorSize=24
+NotificationTheme=Slider
+BackgroundImage=/usr/share/desktop-base/active-theme/login/background.svg
+ButtonLayout=:minimize,maximize,close

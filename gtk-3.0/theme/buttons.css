@@ -51,3 +51,7 @@ button.flat:backdrop,
 button.link:active{
 border-color:transparent;
 background:transparent;}
+
+stackswitcher>button,
+stackswitcher>button:backdrop{
+font-weight:bold;}

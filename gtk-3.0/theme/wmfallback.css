@@ -17,7 +17,7 @@ min-width:22px;
 min-height:22px;
 color: transparent;
 background-position:center;
-background-repeat: no-repeat;
+background-repeat:no-repeat;
 background-size: 22px 22px;}
 button.close.titlebutton:active{
 background:@error_color;}
@@ -94,3 +94,6 @@ headerbar>stack>box>.subtitle,
 .header-bar .subtitle{
 font-weight:bold;
 text-shadow:none;}
+headerbar>*,
+headerbar>*:backdrop {
+margin: 2px 2px;}

@@ -65,12 +65,9 @@
 @import url("theme/dialogs.css");
 @import url("theme/calendar.css");*/
 /*extra apps
-@import url("theme/xtra-matepanel.css");
-@import url("theme/xtra-mate.css");
-@import url("theme/xtra-gnome.css");
-@import url("theme/xtra-cinnamon.css");
 @import url("theme/xtra-lightdm.css");
 @import url("theme/xtra-unity.css");*/
 @import url("theme/xtra-xfce.css");
+@import url("theme/xtra-mate.css");
 @import url("theme/xtra-vtestuff.css");
 @import url("theme/xtra-mozilla.css");

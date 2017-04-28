@@ -1,0 +1,85 @@
+.mate-panel-menu-bar,
+.mate-panel-menu-bar menubar,
+#PanelApplet-window-menu-applet-button,
+#PanelPlug #clock-applet-button {
+border-radius:0px;
+margin:0px;
+padding:0px;
+border:none;
+box-shadow:none;}
+
+PanelToplevel.background > grid > button,
+.mate-panel-menu-bar #tasklist-button,
+#PanelApplet button,
+#PanelApplet > button,
+#PanelPlug button{
+border:none;
+margin:0px;
+padding:0px;
+border-radius:0px;
+box-shadow:none;}
+
+.mate-panel-applet-slider > frame {
+padding:0px;
+border:1px solid rgba(0,0,0,0.3);
+border-radius:2px;
+background:shade(@bg_color,1.05);}
+
+.mate-panel-menu-bar menubar>menuitem>label,
+.mate-panel-menu-bar menubar:backdrop>menuitem>label,
+#PanelPlug label,
+#PanelApplet > button > label{
+border-radius:0px;
+padding:1px;
+color:@fg_color;}
+
+.mate-panel-menu-bar menubar>menuitem>label,
+.mate-panel-menu-bar menubar:backdrop>menuitem>label{
+font-weight:bold;}
+
+.mate-panel-menu-bar menubar>menuitem:hover>label,
+.mate-panel-menu-bar menubar:backdrop>menuitem:hover>label,
+#clock-applet-button:checked label{
+color:@fg_color;}
+
+.mate-panel-menu-bar #tasklist-button:hover {
+background-color:alpha(@selected_bg_color,0.7);}
+
+.mate-panel-menu-bar #tasklist-button:active,
+.mate-panel-menu-bar #tasklist-button:checked {
+background-color:@selected_bg_color;}
+
+.mate-panel-menu-bar #tasklist-button:disabled label{
+color:@inactive_fg_color;}
+
+#PanelPlug menuitem label{
+color:@fg_color;}
+
+#clock-applet-button label,
+#tasklist-button label,
+#tasklist-button,
+#PanelPlug #tasklist-button{
+font-weight:bold;}
+
+#PanelPlug #clock-applet-button:checked {
+background:@selected_bg_color;}
+
+#PanelApplet{
+padding:0px 2px;}
+
+PanelToplevel.background,
+.mate-panel-menu-bar grid,
+#PanelPlug{
+background:@bg_color;}
+
+#mate-menu>widget>box>widget>*{
+margin:5px;}
+
+#mate-menu widget widget widget notebook {
+margin:5px;}
+
+#mate-menu widget widget widget notebook>stack,
+#mate-menu widget widget widget notebook>stack>box>viewport>grid{
+background-color:rgba(255,255,255,0.5);}
+#mate-menu widget widget widget notebook>stack scrolledwindow>viewport {
+background:@base_color;}

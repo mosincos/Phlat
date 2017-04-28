@@ -155,7 +155,7 @@ background:@selected_bg_color;}
 
 statusbar,
 statusbar:backdrop{
-margin:-8px -10px;}
+margin:-4px -6px;}
 
 .overshoot.top,
 .overshoot.top:backdrop,
@@ -183,6 +183,8 @@ border:1px solid @selected_base_color;
 background:alpha(@selected_base_color,0.2);}
 
 
+toolbar{
+margin:0px 1px;}
 /*
 
 :not(decoration):not(window):drop(active):focus,

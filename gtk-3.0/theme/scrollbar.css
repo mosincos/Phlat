@@ -1,42 +1,46 @@
 
 scrollbar.vertical,
 scrollbar.vertical:backdrop {
-min-width:18px;
-min-height:21px;
-margin:-1px;
+min-width:17px;
+min-height:60px;
 border:1px solid @border_color;
-background:shade (@bg_color,0.6)}
+background:shade (@bg_color,0.6);}
 
 scrollbar.horizontal,
 scrollbar.horizontal:backdrop {
-min-width:21px;
-min-height:18px;
-margin:-1px;
+min-width:60px;
+min-height:17px;
 border:1px solid @border_color;
-background:shade (@bg_color,0.6)}
+background:shade (@bg_color,0.6);}
 
 scrollbar>contents>button,
 scrollbar>contents>button:checked,
-scrollbar>contents>button:active,
-scrollbar>contents>button:hover,
 scrollbar>contents>button:backdrop{
-margin:-1px;
 min-width:16px;
-min-height:16px;}
-
-scrollbar button,
-scrollbar button:checked,
-scrollbar button:backdrop{
-background:inherit;
+min-height:16px;
+margin:1px;
 -gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_normal.svg"),url("../../images/gtk-3.0/arrow-down_normal2.svg"));}
-scrollbar.vertical button.up{
--gtk-icon-transform:rotate(0.5turn);}
-scrollbar.horizontal button.down{
--gtk-icon-transform:rotate(0.75turn);}
-scrollbar.horizontal button.up{
--gtk-icon-transform:rotate(0.25turn);}
-scrollbar button:disabled{
--gtk-icon-source:-gtk-scaled(url("../../images/gtk-3.0/arrow-down_insensitive.svg"),url("../../images/gtk-3.0/arrow-down_insensitive2.svg"));}
+scrollbar.vertical>contents>button.down{
+border:none;
+background-color:transparent;
+background-size:16px 16px;}
+scrollbar.vertical>contents>button.up{
+-gtk-icon-transform:rotate(0.5turn);
+border:none;
+background-color:transparent;
+background-size:16px 16px;}
+scrollbar.horizontal>contents>button.down{
+-gtk-icon-transform:rotate(0.75turn);
+border:none;
+background-color:transparent;
+background-size: 16px 16px;}
+scrollbar.horizontal>contents>button.up{
+-gtk-icon-transform:rotate(0.25turn);
+border:none;
+background-color:transparent;
+background-size:16px 16px;}
+scrollbar>contents>button:disabled{
+opacity:0.3;}
 
 scrollbar slider,
 scrollbar slider:backdrop{
@@ -45,3 +49,15 @@ min-width:18px;
 min-height:21px;
 background-color:@selected_bg_color;
 border:1px solid rgba(0,0,0,0.8);}
+scrollbar.horizontal slider,
+scrollbar.horizontal slider:backdrop{
+margin:-1px;
+min-width:21px;
+min-height:18px;}
+
+scrolledwindow.frame>scrollbar.vertical{
+margin:-1px -1px -1px -0px;}
+scrolledwindow.frame>scrollbar.vertical:dir(rtl){
+margin:-1px 0px -1px -1px;}
+scrolledwindow.frame>scrollbar.horizontal{
+margin:-0px -1px -1px -1px;}

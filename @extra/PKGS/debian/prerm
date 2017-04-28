@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
-for _file in $(cat /usr/share/themes/phlat/.files) ; do 
-  rm -rf "$_file"
-  rm -rf "$_file"
+for _file in $(cat /usr/share/themes/phlat/.files) ; do
+  if [ -f $_file ]; then
+    rm -rf "$_file"
+  fi
 done

@@ -39,8 +39,6 @@ scrollbar.horizontal>contents>button.up{
 border:none;
 background-color:transparent;
 background-size:16px 16px;}
-scrollbar>contents>button:disabled{
-opacity:0.3;}
 
 scrollbar slider,
 scrollbar slider:backdrop{

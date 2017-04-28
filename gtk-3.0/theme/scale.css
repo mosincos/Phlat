@@ -42,15 +42,15 @@ scale marks,
 scale.fine-tune marks,
 scale indicator,
 scale.fine-tune indicator{
-color:transparent;}
+color:@border_color;}
 scale.horizontal indicator,
 scale.horizontal.fine-tune indicator{
-min-height:5px;
+min-height:3px;
 min-width:1px;}
 scale.vertical indicator,
 scale.vertical.fine-tune indicator{
 min-height:1px;
-min-width:6px;}
+min-width:3px;}
 
 scale value{
 margin:3px;

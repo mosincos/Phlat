@@ -1,7 +1,11 @@
 #!/bin/sh
 set -e
 for _file in $(cat /usr/share/themes/phlat/.files) ; do
+  if [ -L $_file ]; then
+    rm -f "$_file"
+  fi
   if [ -f $_file ]; then
-    rm -rf "$_file"
+    rm -f "$_file"
   fi
 done
+rm -rf /usr/share/themes/phlat

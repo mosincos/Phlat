@@ -39,6 +39,7 @@ XfdesktopIconView::cell-padding=0
 XfdesktopIconView::cell-text-width-proportion=3
 XfdesktopIconView::shadow-color=@base_color
 XfdesktopIconView::selected-shadow-color=@selected_base_color
+XfdesktopIconView::label-radius=0
 fg[NORMAL]=@text_color
 fg[SELECTED]=@selected_text_color
 fg[ACTIVE]=@selected_text_color

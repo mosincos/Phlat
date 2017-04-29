@@ -27,3 +27,19 @@ printf "${_tmpdir}/usr/share/themes/phlat/.files\n" >> ${_tmpdir}/usr/share/them
 sed -i 's|^/tmp/phlat.tmp||g' ${_tmpdir}/usr/share/themes/phlat/.files
 #install to /
 cp -R ${_tmpdir}/* /
+#use the distros color
+if dpkg --get-selections|grep ubuntu ;then
+	_selection_color="#E95420"
+elif dpkg --get-selections|grep trios ;then
+	_selection_color="#CF4242"
+elif dpkg --get-selections|grep kfreebsd ;then
+	_selection_color="#870000"
+elif dpkg --get-selections|grep siduction ;then
+	_selection_color="#FF6600"
+elif dpkg --get-selections|grep devuan ;then
+	_selection_color="#6F6A83"
+else
+	_selection_color="#D70A53"
+fi
+sh /usr/share/themes/phlat/.changecolor.sh -c "${_selection_color}"
+
